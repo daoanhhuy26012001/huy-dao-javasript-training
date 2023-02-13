@@ -1,0 +1,22 @@
+{
+  "name": "javasript",
+  "description": "Example javasript",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel --no-cache",
+    "watch": "parcel watch",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/daoanhhuy26012001/huy-dao-javasript-training"
+  },
+  "author": "Huy Dao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daoanhhuy26012001/huy-dao-javasript-training/issues"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  }
+}
