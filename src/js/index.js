@@ -33,6 +33,7 @@ function ShowMessage(firstName)
 ShowMessage("Steve");
 */
 
+/*
 //Example 2023/02/14
 const student = {
   firstName: "dao",
@@ -41,7 +42,57 @@ const student = {
   ages: 22,
 };
 
+
 const submit = document.getElementById("btn-primary");
 submit.addEventListener("click", () => {
   console.log(student);
 });
+*/
+
+// Example 2023/02/17
+const User = [
+  {
+    userName: 'daoanhhuy26012001',
+    password: '0775529135',
+  },
+  {
+    userName: 'dophamanhthu25082002',
+    password: '0776324384',
+  },
+];
+
+function getUser() {
+  setTimeout(() => {
+    User.forEach((user, index) => {
+      console.log(user.userName);
+      console.log(user.password);
+    });
+  }, 1000);
+}
+
+function createUser(user) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      User.push(user);
+
+      const error = false;
+
+      if (!error) {
+        resolve();
+      } else {
+        reject("Error: Something went wrong!");
+      }
+    }, 2000);
+  });
+}
+
+async function init() {
+  await createUser({
+    userName: 'huydao26012001',
+    password: `0775529135Hhuy`,
+  });
+
+  getUser();
+}
+
+init();
