@@ -49,6 +49,7 @@ submit.addEventListener("click", () => {
 });
 */
 
+/*
 // Example 2023/02/17
 const User = [
   {
@@ -96,3 +97,20 @@ async function init() {
 }
 
 init();
+*/
+
+// Example 2023/02/20
+function person([name, age]) {
+  console.log(name, age);
+}
+person(["huydao", 22]);
+
+const parity = (pram) => {
+  return pram.filter(x => x % 2 === 0)
+}
+
+const add = [100, 1001 , 2000]
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, ...add]
+const callFunction = parity(arr)
+console.log(callFunction);
+
