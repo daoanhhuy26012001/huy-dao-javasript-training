@@ -7,13 +7,15 @@
     <title>Document</title>
     <style>
       button,
-      .submit {
+      .submit,
+      .btn {
         padding: 5px 30px;
         background-color: #122c16;
         color: white;
         text-transform: uppercase;
         border: 3px solid #122c16;
         border-radius: 10px;
+        cursor: pointer;
       }
     </style>
   </head>
@@ -36,10 +38,14 @@
     >
       Exercise 2
     </h1>
-    <p id="text">JavaScript Exercises - w3resource</p>
-    <div>
-      <button id="jsstyle" onclick="js_style()">Style</button>
-    </div>
+
+    <!-- lesson 1 & 3 -->
+      <p id="text">JavaScript Exercises - w3resource</p>
+      <div>
+        <button id="jsstyle" onclick="js_style()">Style</button>
+      </div>
+
+    <!-- lesson 2 -->
     <form
       id="form1"
       onsubmit="getFormValue()"
@@ -68,9 +74,20 @@
         >w3resource</a
       >
     </p>
+    
+    <!-- lesson 4 -->
     <button id="getAttributes">
       Click here to get attributes value
     </button>
     <script src="./js/index.js"></script>
+
+    <!-- lesson 5 -->
+    <table id="sampleTable" border="1">
+      <tr><td>Row1 cell1</td>
+      <td>Row1 cell2</td></tr>
+      <tr><td>Row2 cell1</td>
+      <td>Row2 cell2</td></tr>
+      </table><br>
+      <input class="btn" type="button" onclick="insert()" value="Insert row"> 
   </body>
 </html>

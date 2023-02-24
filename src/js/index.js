@@ -33,3 +33,12 @@ btn.addEventListener("click", () => {
   var tp = document.getElementById("w3r").type;
   alert("type : " + tp);
 });
+
+//lesson 5
+function insert() {
+  var table = document.getElementById("sampleTable").insertRow(0);
+  var cellOne = table.insertCell(0);
+  var cellTwo = table.insertCell(1);
+  cellOne.innerHTML = "new cell1"
+  cellTwo.innerHTML = "new cell2"
+}
